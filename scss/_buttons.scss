@@ -1,0 +1,25 @@
+%btn {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-family: $font-stack;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background: $btn-background;
+    color: #3f3f3f;
+    border: none;
+    border-radius: 2.8rem;
+}
+
+.btn {
+    @extend %btn;
+}

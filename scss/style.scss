@@ -1,4 +1,5 @@
 @import "config";
+@import "buttons";
 
 * {
     margin: 0;
@@ -8,27 +9,33 @@
 }
 
 body {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     overflow: hidden;
-    background: linear-gradient(purple, indigo)
+    background: linear-gradient(purple, indigo);
 }
 
 .app {
-    background: white;
+    background-color: $light-color;
     padding: 20px;
     width: 600px;
     margin: 0 auto;
-    box-shadow: 0 1px 30px 0 rgba(0,0,0,0.14), 0 0px 0px 0 rgba(0,0,0,0.12), 0 0px 0px 0px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 30px 0 rgba(0,0,0,0.9);
     border-radius: 10px;
 
     &__header {
         padding: 20px;
         text-align: center;
+        color: purple;
+        text-shadow: 0 0 30px purple;
+
+        .hide {
+            display: none!important;
+        }
     }
 
     &__content {
@@ -36,6 +43,19 @@ body {
         position: relative;
         align-items: center;
         justify-content: center;
+
+        .game {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            background-color: #ccc;
+            min-height: 300px;
+            min-width: 300px;
+            max-width: 300px;
+            max-height: 300px;
+        }
     }
 
     &__footer {
@@ -55,6 +75,24 @@ body {
                 margin-bottom: 3px;
                 color: #acacac;
                 font-family: $font-stack;
+                font-size: .8rem;
+                font-weight: normal;
+                line-height: 1.2rem;
+            }
+            
+            input {
+                display: block;
+                width: 100%;
+                max-height: 2.8rem;
+                padding: .8rem 1rem;
+                font-size: inherit;
+                font-family: $font-stack;
+                font-weight: inherit;
+                line-height: 1.4;
+                color: black;
+                background-color: $light-color none;
+                border: 1px solid #999;
+                border-radius: 5px;
             }
         }
     }
