@@ -60,7 +60,7 @@ body {
   text-shadow: 1px 1px 5px purple;
   font-family: GothamPro, sans-serif;
 }
-.app__header .hide {
+.app .hide {
   display: none !important;
 }
 .app__content {

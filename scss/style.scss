@@ -34,10 +34,13 @@ body {
         text-shadow: 1px 1px 5px purple;
         font-family: $font-stack;
 
-        .hide {
-            display: none!important;
-        }
+
     }
+
+    .hide {
+        display: none!important;
+    }
+
 
     &__content {
         display: flex;
