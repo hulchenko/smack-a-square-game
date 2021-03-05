@@ -19,6 +19,13 @@
   border: none;
   border-radius: 2.8rem;
 }
+.btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #3f3f3f;
+}
+.btn:active {
+  background: #f9cb1c;
+}
 
 * {
   margin: 0;
@@ -46,25 +53,22 @@ body {
   box-shadow: 0 1px 30px 0 rgba(0, 0, 0, 0.9);
   border-radius: 10px;
 }
-
 .app__header {
   padding: 20px;
   text-align: center;
   color: purple;
-  text-shadow: 0 0 30px purple;
+  text-shadow: 1px 1px 5px purple;
+  font-family: GothamPro, sans-serif;
 }
-
 .app__header .hide {
   display: none !important;
 }
-
 .app__content {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
 }
-
 .app__content .game {
   position: relative;
   display: flex;
@@ -77,36 +81,32 @@ body {
   max-width: 300px;
   max-height: 300px;
 }
-
 .app__footer {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .app__footer .input {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-
 .app__footer .input label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 3px;
   color: #acacac;
   font-family: GothamPro, sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: normal;
   line-height: 1.2rem;
 }
-
 .app__footer .input input {
   display: block;
   width: 100%;
   max-height: 2.8rem;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: inherit;
   font-family: GothamPro, sans-serif;
   font-weight: inherit;
@@ -116,3 +116,5 @@ body {
   border: 1px solid #999;
   border-radius: 5px;
 }
+
+/*# sourceMappingURL=style.css.map */

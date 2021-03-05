@@ -18,6 +18,15 @@
     color: #3f3f3f;
     border: none;
     border-radius: 2.8rem;
+
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px #3f3f3f;
+    }
+
+    &:active {
+        background: darken($btn-background, 10%);
+    }
 }
 
 .btn {

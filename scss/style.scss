@@ -31,7 +31,8 @@ body {
         padding: 20px;
         text-align: center;
         color: purple;
-        text-shadow: 0 0 30px purple;
+        text-shadow: 1px 1px 5px purple;
+        font-family: $font-stack;
 
         .hide {
             display: none!important;
