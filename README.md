@@ -1,4 +1,5 @@
 Smack-a-Square game project.
+Environment used: JS and Sass.
 
 LIVE DEMO:
 
